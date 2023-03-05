@@ -26,12 +26,10 @@
         }
       },
       {
-        "name": "customerReviewAverage",
+        "name": "Review_avg",
         "template_language": "mustache",
         "template": {
           "function_score": {
-            "boost_mode": "replace",
-            "score_mode": "avg",
             "functions": [
               {
                 "field_value_factor": {
@@ -48,12 +46,10 @@
         }
       },
       {
-        "name": "customerReviewCount",
+        "name": "Revuew_count",
         "template_language": "mustache",
         "template": {
           "function_score": {
-            "boost_mode": "replace",
-            "score_mode": "avg",
             "functions": [
               {
                 "field_value_factor": {
@@ -108,6 +104,42 @@
             "query": {
               "match_all": {}
             }
+          }
+        }
+      },
+      {
+        "name": "artistName",
+        "params": [
+          "keywords"
+        ],
+        "template_language": "mustache",
+        "template": {
+          "match_phrase": {
+            "artistName": "{{keywords}}"
+          }
+        }
+      },
+      {
+        "name": "shortDescription",
+        "params": [
+          "keywords"
+        ],
+        "template_language": "mustache",
+        "template": {
+          "match_phrase": {
+            "shortDescription": "{{keywords}}"
+          }
+        }
+      },
+      {
+        "name": "longDescription",
+        "params": [
+          "keywords"
+        ],
+        "template_language": "mustache",
+        "template": {
+          "match_phrase": {
+            "longDescription": "{{keywords}}"
           }
         }
       }
