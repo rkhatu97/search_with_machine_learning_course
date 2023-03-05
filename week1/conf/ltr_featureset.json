@@ -21,7 +21,10 @@
         "template_language": "mustache",
         "template": {
           "match_phrase": {
-            "name": "{{keywords}}"
+            "name": {
+              "query": "{{keywords}}",
+              "slop": 6
+            }
           }
         }
       },
@@ -34,8 +37,7 @@
               {
                 "field_value_factor": {
                   "field": "customerReviewAverage",
-                  "missing": 100000000,
-                  "modifier": "reciprocal"
+                  "missing": 3
                 }
               }
             ],
@@ -46,7 +48,7 @@
         }
       },
       {
-        "name": "Revuew_count",
+        "name": "Review_count",
         "template_language": "mustache",
         "template": {
           "function_score": {
@@ -54,8 +56,7 @@
               {
                 "field_value_factor": {
                   "field": "customerReviewCount",
-                  "missing": 100000000,
-                  "modifier": "reciprocal"
+                  "missing": 0
                 }
               }
             ],
@@ -115,7 +116,10 @@
         "template_language": "mustache",
         "template": {
           "match_phrase": {
-            "artistName": "{{keywords}}"
+            "artistName": {
+              "query": "{{keywords}}",
+              "slop": 6
+            }
           }
         }
       },
@@ -127,7 +131,10 @@
         "template_language": "mustache",
         "template": {
           "match_phrase": {
-            "shortDescription": "{{keywords}}"
+            "shortDescription": {
+              "query": "{{keywords}}",
+              "slop": 6
+            }
           }
         }
       },
@@ -139,7 +146,10 @@
         "template_language": "mustache",
         "template": {
           "match_phrase": {
-            "longDescription": "{{keywords}}"
+            "longDescription": {
+              "query": "{{keywords}}",
+              "slop": 6
+            }
           }
         }
       }

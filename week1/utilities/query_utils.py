@@ -166,7 +166,7 @@ def create_query(user_query, click_prior_query, filters, sort="_score", sortDir=
                               "match_phrase": { # near exact phrase match
                                     "name.hyphens": {
                                         "query": user_query,
-                                        "slop": 6,
+                                        "slop": 1,
                                         "boost": 50
                                     }
                                }
