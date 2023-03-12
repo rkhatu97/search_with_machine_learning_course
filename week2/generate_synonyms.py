@@ -2,7 +2,7 @@ import fasttext
 import glob
 import csv
 
-model = fasttext.load_model("/workspace/datasets/fasttext/title_model.bin")
+model = fasttext.load_model("/workspace/datasets/fasttext/title_model_100.bin")
 # opening the file in read mode
 my_file = open("/workspace/datasets/fasttext/top_words.txt", "r")
   
