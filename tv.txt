@@ -1,0 +1,150 @@
+predictions:  (('__label__cat02015', '__label__cat09000', '__label__pcmcat247400050000', '__label__cat02009'), array([0.4806788 , 0.0626112 , 0.04835112, 0.04244692]))
+{
+  "took": 105,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": 1222.7533,
+    "hits": [
+      {
+        "_index": "bbuy_products",
+        "_id": "4854433",
+        "_score": 1222.7533,
+        "_source": {
+          "name": [
+            "Apple\u00ae - Apple TV\u00ae"
+          ],
+          "shortDescription": [
+            "3rd generation; compatible with most HDTVs with an HDMI interface; allows you to stream movies, TV shows, photos and music from your computer to your HDTV or home theater system; 802.11a/b/g/n wireless LAN. \nLearn more about smart products."
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "1953594",
+        "_score": 650.42413,
+        "_source": {
+          "name": [
+            "KCPI - Digital TV Converter Box"
+          ],
+          "shortDescription": [
+            "Compatible with most analog televisions and recording devices; converts digital TV broadcast signals to analog signals; TV tuner; parental controls"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "5774879",
+        "_score": 638.43756,
+        "_source": {
+          "name": [
+            "Monster Cable - TV Screen Cleaning Kit"
+          ],
+          "shortDescription": [
+            "High-tech reusable MicroFiber cloth cleans your screen without scratching it"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "7279081",
+        "_score": 416.97247,
+        "_source": {
+          "name": [
+            "Insignia\u2122 - 20\" TV/DVD Combo with Front A/V Input"
+          ],
+          "shortDescription": [
+            "Built-in DVD player; plays back DVD, DVD-R/-RW, CD, CD-R/RW, VCD and JPEG formats"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "7006036",
+        "_score": 334.13373,
+        "_source": {
+          "name": [
+            "Insignia\u2122 - 24\" Stereo TV with Component Video Input"
+          ],
+          "shortDescription": [
+            "4:3 aspect ratio; side A/V and S-video inputs; NTSC tuner; headphone jack; 120-min. sleep timer"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "6986112",
+        "_score": 241.0456,
+        "_source": {
+          "name": [
+            "Magnavox - 15\" HD-Ready LCD TV w/HD Component Video Inputs"
+          ],
+          "shortDescription": [
+            "Picture-in-picture; Smart Picture; Smart Sound; table stand converts for wall mounting"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "7964937",
+        "_score": 231.40057,
+        "_source": {
+          "name": [
+            "Studio RTA - TV Stand for Tube TVs Up to 27\""
+          ],
+          "shortDescription": [
+            "Steel and particleboard; 2 shelves; mesh rear panel; floor levelers"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "3622326",
+        "_score": 137.77823,
+        "_source": {
+          "name": [
+            "NETGEAR - NeoTV Wireless Media Player"
+          ],
+          "shortDescription": [
+            "For streaming movies, TV shows, music and more to your TV; Wireless-N standard; YouTube Leanback"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "8205532",
+        "_score": 135.04054,
+        "_source": {
+          "name": [
+            "Dynex\u00ae - 20\" 480i Standard-Definition Digital TV/DVD Combo"
+          ],
+          "shortDescription": [
+            "Front A/V input; 4:3 aspect ratio; silver cabinet; built-in DVD player"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "3558057",
+        "_score": 133.77977,
+        "_source": {
+          "name": [
+            "Western Digital - WD TV Live Media Player"
+          ],
+          "shortDescription": [
+            "Allows you to enjoy home digital media or Internet sites on your HDTV; supports 1080p signals; Ethernet port; USB 2.0 interface; Wi-Fi"
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+predictions:  (('__label__cat02015', '__label__cat09000', '__label__pcmcat247400050000', '__label__cat02009'), array([0.4830443 , 0.06163861, 0.04916704, 0.04343649]))
+{
+  "took": 13,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 2,
+      "relation": "eq"
+    },
+    "max_score": 0.0887943,
+    "hits": [
+      {
+        "_index": "bbuy_products",
+        "_id": "18268199",
+        "_score": 0.0887943,
+        "_source": {
+          "name": [
+            "Nicholas Byrd: Magic with the iPhone - DVD"
+          ],
+          "shortDescription": []
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "1035182",
+        "_score": 0.030613879,
+        "_source": {
+          "name": [
+            "Clash Of The Titans Iphone Skin Presell - DVD"
+          ],
+          "shortDescription": []
+        }
+      }
+    ]
+  }
+}

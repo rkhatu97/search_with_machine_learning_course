@@ -1,0 +1,130 @@
+predictions:  (('__label__cat02015', '__label__cat09000', '__label__pcmcat247400050000', '__label__cat02009'), array([0.48589587, 0.06121307, 0.0470669 , 0.04389701]))
+{
+  "took": 12,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 135,
+      "relation": "eq"
+    },
+    "max_score": 0.05908393,
+    "hits": [
+      {
+        "_index": "bbuy_products",
+        "_id": "15485752",
+        "_score": 0.05908393,
+        "_source": {
+          "name": [
+            "Country Mouse & City Mouse Adventures: Mouse - DVD"
+          ],
+          "shortDescription": []
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "15485814",
+        "_score": 0.049043737,
+        "_source": {
+          "name": [
+            "Country Mouse & City Mouse Adventures: Tales Of - DVD"
+          ],
+          "shortDescription": []
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "18262501",
+        "_score": 0.048968975,
+        "_source": {
+          "name": [
+            "Mighty Mouse - DVD"
+          ],
+          "shortDescription": []
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "16935667",
+        "_score": 0.045234866,
+        "_source": {
+          "name": [
+            "The Country Mouse and the City Mouse Adventures: The Mystery of the Mouse Pharoah's Tomb - DVD"
+          ],
+          "shortDescription": []
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "9983765",
+        "_score": 0.045150094,
+        "_source": {
+          "name": [
+            "Mouse & the Motorcycle - DVD"
+          ],
+          "shortDescription": []
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "13574875",
+        "_score": 0.045150094,
+        "_source": {
+          "name": [
+            "Mighty Mouse & Friends - DVD"
+          ],
+          "shortDescription": []
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "3804734",
+        "_score": 0.045150094,
+        "_source": {
+          "name": [
+            "Mouse House - Animated - VHS"
+          ],
+          "shortDescription": []
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "3537015",
+        "_score": 0.045150094,
+        "_source": {
+          "name": [
+            "Mouse Hunt - Widescreen - DVD"
+          ],
+          "shortDescription": []
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "3386099",
+        "_score": 0.045150094,
+        "_source": {
+          "name": [
+            "Mouse Hunt - Fullscreen - VHS"
+          ],
+          "shortDescription": []
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "15158231",
+        "_score": 0.045150094,
+        "_source": {
+          "name": [
+            "Castillo: Mission - Mouse - DVD"
+          ],
+          "shortDescription": []
+        }
+      }
+    ]
+  }
+}

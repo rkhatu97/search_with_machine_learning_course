@@ -1,0 +1,150 @@
+predictions:  (('__label__pcmcat151600050040', '__label__abcat0513004', '__label__abcat0513001', '__label__abcat0106004'), array([0.21633814, 0.19732475, 0.0776827 , 0.07095519]))
+{
+  "took": 21,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 223,
+      "relation": "eq"
+    },
+    "max_score": 911.3187,
+    "hits": [
+      {
+        "_index": "bbuy_products",
+        "_id": "2619316",
+        "_score": 911.3187,
+        "_source": {
+          "name": [
+            "Dynex\u2122 - Keyboard"
+          ],
+          "shortDescription": [
+            "Compatible with PC; USB connectivity; 103 keys; 6 hot keys; slim design"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "3103238",
+        "_score": 685.12585,
+        "_source": {
+          "name": [
+            "Apple\u00ae - Wireless Keyboard for Select Mac Computers"
+          ],
+          "shortDescription": [
+            "Compatible with select Mac computers; function keys; Bluetooth technology; low-profile aluminum enclosure; intelligent power management system"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "5422445",
+        "_score": 597.96344,
+        "_source": {
+          "name": [
+            "Logitech - K360 Wireless Keyboard - Coral Fan"
+          ],
+          "shortDescription": [
+            "Wireless technology; USB port; 121 keys; Internet and multimedia hot keys; compact design"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "3142351",
+        "_score": 381.5891,
+        "_source": {
+          "name": [
+            "Apple\u00ae - Keyboard with Numeric Keypad"
+          ],
+          "shortDescription": [
+            "Compatible with Mac; 2 USB 2.0 ports; function keys; full-size arrow keys; extended layout"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "2945413",
+        "_score": 253.70416,
+        "_source": {
+          "name": [
+            "HP - Elite v2 Wireless Keyboard"
+          ],
+          "shortDescription": [
+            "30' wireless range; adjustable height; 2.4GHz USB wireless receiver"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "3764993",
+        "_score": 148.02084,
+        "_source": {
+          "name": [
+            "Logitech - K400 Keyboard"
+          ],
+          "shortDescription": [
+            "Wireless - RFUSB - TouchPad - PC - Mute, Volume Down, Volume Up, Home Screen Hot Key(s) Logitech K400 Keyboard"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "7332059",
+        "_score": 11.96174,
+        "_source": {
+          "name": [
+            "Microsoft - Natural Ergonomic Keyboard 4000"
+          ],
+          "shortDescription": [
+            "For PC and Mac; natural wrist alignment; Intuitive Zoom Slider; 1-touch functionality; improved number pad"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "5025525",
+        "_score": 2.7824218,
+        "_source": {
+          "name": [
+            "Logitech - K750 Wireless Solar Keyboard for Mac - White/Silver"
+          ],
+          "shortDescription": [
+            "Compatible with Mac; USB connectivity; 121 keys; multimedia and Internet keys"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "1261466",
+        "_score": 1.8908803,
+        "_source": {
+          "name": [
+            "Logitech - K800 Wireless Illuminated Keyboard"
+          ],
+          "shortDescription": [
+            "Wireless connectivity; PerfectStroke key system; backlit keys"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "9715661",
+        "_score": 0.57593966,
+        "_source": {
+          "name": [
+            "Microsoft - Arc Wireless Keyboard"
+          ],
+          "shortDescription": [
+            "Compatible with PC and Mac; 2.4GHz wireless technology; USB interface; multimedia and Internet keys; programmable buttons; stowable nano transceiver"
+          ]
+        }
+      }
+    ]
+  }
+}
