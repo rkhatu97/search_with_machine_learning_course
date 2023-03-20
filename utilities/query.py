@@ -190,7 +190,7 @@ def search(client, user_query, index="bbuy_products", sort="_score", sortDir="de
     classification_model = "/workspace/search_with_machine_learning_course/query_model.bin"
     set_threshold = 0.5
     model = fasttext.load_model(classification_model)
-    predictions = model.predict(user_query)
+    predictions = model.predict(user_query, 4)
     print("predictions: ", predictions)
 
     sum_thresh = 0.0
@@ -210,7 +210,7 @@ def search(client, user_query, index="bbuy_products", sort="_score", sortDir="de
             filters = [
                 {
                     "terms": {
-                    "categoryPathIds.keyword": cat_wo_label
+                        "categoryPathIds.keyword": cat_wo_label
                     }
                 }
             ]
