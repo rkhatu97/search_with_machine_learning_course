@@ -11,7 +11,7 @@ from urllib.parse import urljoin
 import pandas as pd
 import fileinput
 import logging
-
+import fasttext
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -50,6 +50,7 @@ def create_prior_queries(doc_ids, doc_id_weights,
 
 # Hardcoded query here.  Better to use search templates or other query config.
 def create_query(user_query, click_prior_query, filters, sort="_score", sortDir="desc", size=10, source=None):
+    name = "name.synonyms" if args.synonyms else "name"
     query_obj = {
         'size': size,
         "sort": [
@@ -65,7 +66,7 @@ def create_query(user_query, click_prior_query, filters, sort="_score", sortDir=
                         "should": [  #
                             {
                                 "match": {
-                                    "name": {
+                                    name: {
                                         "query": user_query,
                                         "fuzziness": "1",
                                         "prefix_length": 2,
@@ -89,7 +90,7 @@ def create_query(user_query, click_prior_query, filters, sort="_score", sortDir=
                                     "type": "phrase",
                                     "slop": "6",
                                     "minimum_should_match": "2<75%",
-                                    "fields": ["name^10", "name.hyphens^10", "shortDescription^5",
+                                    "fields": [f"{name}^10", "name.hyphens^10", "shortDescription^5",
                                                "longDescription^5", "department^0.5", "sku", "manufacturer", "features",
                                                "categoryPath"]
                                 }
@@ -185,12 +186,36 @@ def create_query(user_query, click_prior_query, filters, sort="_score", sortDir=
         query_obj["_source"] = source
     return query_obj
 
-
 def search(client, user_query, index="bbuy_products", sort="_score", sortDir="desc"):
-    #### W3: classify the query
-    #### W3: create filters and boosts
-    # Note: you may also want to modify the `create_query` method above
-    query_obj = create_query(user_query, click_prior_query=None, filters=None, sort=sort, sortDir=sortDir, source=["name", "shortDescription"])
+    classification_model = "/workspace/search_with_machine_learning_course/query_model.bin"
+    set_threshold = 0.5
+    model = fasttext.load_model(classification_model)
+    predictions = model.predict(user_query)
+    print("predictions: ", predictions)
+
+    sum_thresh = 0.0
+    cat_wo_label = []
+    if len(predictions) >= 2:
+        categories = list(predictions[0])
+        scores = list(predictions[1])
+
+        if len(categories) > 0 and len(categories) == len(scores):
+            for i, j in zip(categories, scores):
+                cat_wo_label.append(i.replace("__label__", ""))
+                sum_thresh += j
+                if sum_thresh >= set_threshold:
+                    break
+                
+
+            filters = [
+                {
+                    "terms": {
+                    "categoryPathIds.keyword": cat_wo_label
+                    }
+                }
+            ]
+
+    query_obj = create_query(user_query, click_prior_query=None, filters=filters, sort=sort, sortDir=sortDir, source=["name", "shortDescription"])
     logging.info(query_obj)
     response = client.search(query_obj, index=index)
     if response and response['hits']['hits'] and len(response['hits']['hits']) > 0:
@@ -212,7 +237,8 @@ if __name__ == "__main__":
                          help='The OpenSearch port')
     general.add_argument('--user',
                          help='The OpenSearch admin.  If this is set, the program will prompt for password too. If not set, use default of admin/admin')
-
+    general.add_argument('--synonyms', default=False, action='store_true', help='Switch between field')
+    general.add_argument('--query', help='User query')
     args = parser.parse_args()
 
     if len(vars(args)) == 0:
@@ -239,14 +265,15 @@ if __name__ == "__main__":
 
     )
     index_name = args.index
-    query_prompt = "\nEnter your query (type 'Exit' to exit or hit ctrl-c):"
-    print(query_prompt)
-    for line in fileinput.input():
-        query = line.rstrip()
-        if query == "Exit":
-            break
-        search(client=opensearch, user_query=query, index=index_name)
+    # query_prompt = "\nEnter your query (type 'Exit' to exit or hit ctrl-c):"
+    # print(query_prompt)
+    # for line in fileinput.input():
+    #     query = line.rstrip()
+    #     if query == "Exit":
+    #         break
+    query = args.query
+    search(client=opensearch, user_query=query, index=index_name)
 
-        print(query_prompt)
+        # print(query_prompt)
 
     
