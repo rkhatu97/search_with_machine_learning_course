@@ -60,7 +60,7 @@ while len(queries_df.loc[queries_df["count"] < min_queries]["count"]) > 0:
     queries_df["category"] = pd.DataFrame(queries_df.apply(lambda x: x["parent"] if x["count"] < min_queries else  x["category"], axis=1).to_list(),index=queries_df.index)
     queries_df["count"] = queries_df.groupby('category')['category'].transform('count')
     queries_df = queries_df.drop(["parent"], axis=1)
-
+print("Unique categories: ", len(queries_df["category"].unique()))
 # Create labels in fastText format.
 queries_df['label'] = '__label__' + queries_df['category']
 
