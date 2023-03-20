@@ -43,8 +43,6 @@ for child in root:
         categories.append(leaf_id)
         parents.append(cat_path_ids[-2])
 parents_df = pd.DataFrame(list(zip(categories, parents)), columns =['category', 'parent'])
-parents_map = dict(zip(parents_df['category'].tolist(), parents_df['parent'].tolist()))
-
 
 # Read the training data into pandas, only keeping queries with non-root categories in our category tree.
 queries_df = pd.read_csv(queries_file_name)[['category', 'query']]
