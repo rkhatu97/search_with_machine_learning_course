@@ -1,0 +1,149 @@
+{
+  "took": 11,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 50,
+      "relation": "eq"
+    },
+    "max_score": 0.7176162,
+    "hits": [
+      {
+        "_index": "bbuy_products",
+        "_id": "8289103",
+        "_score": 0.7176162,
+        "_source": {
+          "name": [
+            "Apple - TV\u2122"
+          ],
+          "shortDescription": [
+            "Syncs your PC or Mac to your TV; 40GB hard drive; 802.11b/g/n wireless networking; supports resolutions up to 1080i"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "4613797",
+        "_score": 0.7156856,
+        "_source": {
+          "name": [
+            "Coby - LEDTV4626 46\" 1080p LED-LCD TV - 16:9 - HDTV 1080p"
+          ],
+          "shortDescription": [
+            "ATSC - NTSC - 1920 x 1080 Coby LEDTV4626 46\" 1080p LED-LCD TV - 16:9 - HDTV 1080p"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "2877091",
+        "_score": 0.702544,
+        "_source": {
+          "name": [
+            "RCA - 22\" Class - LCD - 1080p - 60Hz - HDTV"
+          ],
+          "shortDescription": [
+            "From our expanded online assortment"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "5396006",
+        "_score": 0.702544,
+        "_source": {
+          "name": [
+            "RCA - 22\" Class - LCD - 1080p - 60Hz - HDTV"
+          ],
+          "shortDescription": [
+            "From our expanded online assortment"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "1331156",
+        "_score": 0.7023833,
+        "_source": {
+          "name": [
+            "Apple\u00ae - TV\u00ae"
+          ],
+          "shortDescription": [
+            "2nd generation; compatible with most HDTVs with an HDMI interface; allows you to stream movies, TV shows, photos and music from your computer to your HDTV or home theater system; 802.11a/b/g/n wireless LAN. \nLearn more about smart products."
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "9532311",
+        "_score": 0.700218,
+        "_source": {
+          "name": [
+            "Apple\u00ae - TV\u2122"
+          ],
+          "shortDescription": [
+            "Syncs your PC or Mac to your TV; 160GB hard drive; 802.11a/b/g/n wireless networking; supports resolutions up to 1080p"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "2877198",
+        "_score": 0.69933534,
+        "_source": {
+          "name": [
+            "RCA - 19\" Class - LCD - 720p - 60Hz - HDTV"
+          ],
+          "shortDescription": [
+            "From our expanded online assortment"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "5396015",
+        "_score": 0.69933534,
+        "_source": {
+          "name": [
+            "RCA - 19\" Class - LCD - 720p - 60Hz - HDTV"
+          ],
+          "shortDescription": [
+            "From our expanded online assortment"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "2877189",
+        "_score": 0.69922173,
+        "_source": {
+          "name": [
+            "RCA - 26\" Class - LCD - 720p - 60Hz - HDTV"
+          ],
+          "shortDescription": [
+            "From our expanded online assortment"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "5395944",
+        "_score": 0.69922173,
+        "_source": {
+          "name": [
+            "RCA - 26\" Class - LCD - 720p - 60Hz - HDTV"
+          ],
+          "shortDescription": [
+            "From our expanded online assortment"
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,447 @@
+{
+  "took": 31,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": 1126.5328,
+    "hits": [
+      {
+        "_index": "bbuy_products",
+        "_id": "4854433",
+        "_score": 1126.5328,
+        "_source": {
+          "name": [
+            "Apple\u00ae - Apple TV\u00ae"
+          ],
+          "shortDescription": [
+            "3rd generation; compatible with most HDTVs with an HDMI interface; allows you to stream movies, TV shows, photos and music from your computer to your HDTV or home theater system; 802.11a/b/g/n wireless LAN. \nLearn more about smart products."
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "5774879",
+        "_score": 634.18756,
+        "_source": {
+          "name": [
+            "Monster Cable - TV Screen Cleaning Kit"
+          ],
+          "shortDescription": [
+            "High-tech reusable MicroFiber cloth cleans your screen without scratching it"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "1953594",
+        "_score": 632.0092,
+        "_source": {
+          "name": [
+            "KCPI - Digital TV Converter Box"
+          ],
+          "shortDescription": [
+            "Compatible with most analog televisions and recording devices; converts digital TV broadcast signals to analog signals; TV tuner; parental controls"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "6986112",
+        "_score": 259.61383,
+        "_source": {
+          "name": [
+            "Magnavox - 15\" HD-Ready LCD TV w/HD Component Video Inputs"
+          ],
+          "shortDescription": [
+            "Picture-in-picture; Smart Picture; Smart Sound; table stand converts for wall mounting"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "7964937",
+        "_score": 256.4389,
+        "_source": {
+          "name": [
+            "Studio RTA - TV Stand for Tube TVs Up to 27\""
+          ],
+          "shortDescription": [
+            "Steel and particleboard; 2 shelves; mesh rear panel; floor levelers"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "8205532",
+        "_score": 143.53835,
+        "_source": {
+          "name": [
+            "Dynex\u00ae - 20\" 480i Standard-Definition Digital TV/DVD Combo"
+          ],
+          "shortDescription": [
+            "Front A/V input; 4:3 aspect ratio; silver cabinet; built-in DVD player"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "3622326",
+        "_score": 136.84175,
+        "_source": {
+          "name": [
+            "NETGEAR - NeoTV Wireless Media Player"
+          ],
+          "shortDescription": [
+            "For streaming movies, TV shows, music and more to your TV; Wireless-N standard; YouTube Leanback"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "3558057",
+        "_score": 135.52783,
+        "_source": {
+          "name": [
+            "Western Digital - WD TV Live Media Player"
+          ],
+          "shortDescription": [
+            "Allows you to enjoy home digital media or Internet sites on your HDTV; supports 1080p signals; Ethernet port; USB 2.0 interface; Wi-Fi"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "9747077",
+        "_score": 90.12221,
+        "_source": {
+          "name": [
+            "Antennas Direct - ClearStream Micron Indoor Long-Range Digital TV Antenna"
+          ],
+          "shortDescription": [
+            "Receives DTV signals with a range of up to 30 miles; compact design; table- or wall-mountable design; 4.5 dBi peak gain"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "7708359",
+        "_score": 73.10658,
+        "_source": {
+          "name": [
+            "Pinnacle Design - TV Stand for Large Flat-Panel and Projection TVs"
+          ],
+          "shortDescription": [
+            "Adjustable design accommodates flat-panel TVs 40\" - 61\" and projection TVs up to 61\" (150 lbs. max); holds up to 4 A/V components"
+          ]
+        }
+      }
+    ]
+  }
+}
+{
+  "took": 62,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 50,
+      "relation": "eq"
+    },
+    "max_score": 0.7176162,
+    "hits": [
+      {
+        "_index": "bbuy_products",
+        "_id": "8289103",
+        "_score": 0.7176162,
+        "_source": {
+          "name": [
+            "Apple - TV\u2122"
+          ],
+          "shortDescription": [
+            "Syncs your PC or Mac to your TV; 40GB hard drive; 802.11b/g/n wireless networking; supports resolutions up to 1080i"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "4613797",
+        "_score": 0.7156856,
+        "_source": {
+          "name": [
+            "Coby - LEDTV4626 46\" 1080p LED-LCD TV - 16:9 - HDTV 1080p"
+          ],
+          "shortDescription": [
+            "ATSC - NTSC - 1920 x 1080 Coby LEDTV4626 46\" 1080p LED-LCD TV - 16:9 - HDTV 1080p"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "2877091",
+        "_score": 0.702544,
+        "_source": {
+          "name": [
+            "RCA - 22\" Class - LCD - 1080p - 60Hz - HDTV"
+          ],
+          "shortDescription": [
+            "From our expanded online assortment"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "5396006",
+        "_score": 0.702544,
+        "_source": {
+          "name": [
+            "RCA - 22\" Class - LCD - 1080p - 60Hz - HDTV"
+          ],
+          "shortDescription": [
+            "From our expanded online assortment"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "1331156",
+        "_score": 0.7023833,
+        "_source": {
+          "name": [
+            "Apple\u00ae - TV\u00ae"
+          ],
+          "shortDescription": [
+            "2nd generation; compatible with most HDTVs with an HDMI interface; allows you to stream movies, TV shows, photos and music from your computer to your HDTV or home theater system; 802.11a/b/g/n wireless LAN. \nLearn more about smart products."
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "9532311",
+        "_score": 0.700218,
+        "_source": {
+          "name": [
+            "Apple\u00ae - TV\u2122"
+          ],
+          "shortDescription": [
+            "Syncs your PC or Mac to your TV; 160GB hard drive; 802.11a/b/g/n wireless networking; supports resolutions up to 1080p"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "2877198",
+        "_score": 0.69933534,
+        "_source": {
+          "name": [
+            "RCA - 19\" Class - LCD - 720p - 60Hz - HDTV"
+          ],
+          "shortDescription": [
+            "From our expanded online assortment"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "5396015",
+        "_score": 0.69933534,
+        "_source": {
+          "name": [
+            "RCA - 19\" Class - LCD - 720p - 60Hz - HDTV"
+          ],
+          "shortDescription": [
+            "From our expanded online assortment"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "2877189",
+        "_score": 0.69922173,
+        "_source": {
+          "name": [
+            "RCA - 26\" Class - LCD - 720p - 60Hz - HDTV"
+          ],
+          "shortDescription": [
+            "From our expanded online assortment"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "5395944",
+        "_score": 0.69922173,
+        "_source": {
+          "name": [
+            "RCA - 26\" Class - LCD - 720p - 60Hz - HDTV"
+          ],
+          "shortDescription": [
+            "From our expanded online assortment"
+          ]
+        }
+      }
+    ]
+  }
+}
+{
+  "took": 21,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": 1126.5328,
+    "hits": [
+      {
+        "_index": "bbuy_products",
+        "_id": "4854433",
+        "_score": 1126.5328,
+        "_source": {
+          "name": [
+            "Apple\u00ae - Apple TV\u00ae"
+          ],
+          "shortDescription": [
+            "3rd generation; compatible with most HDTVs with an HDMI interface; allows you to stream movies, TV shows, photos and music from your computer to your HDTV or home theater system; 802.11a/b/g/n wireless LAN. \nLearn more about smart products."
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "5774879",
+        "_score": 634.18756,
+        "_source": {
+          "name": [
+            "Monster Cable - TV Screen Cleaning Kit"
+          ],
+          "shortDescription": [
+            "High-tech reusable MicroFiber cloth cleans your screen without scratching it"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "1953594",
+        "_score": 632.0092,
+        "_source": {
+          "name": [
+            "KCPI - Digital TV Converter Box"
+          ],
+          "shortDescription": [
+            "Compatible with most analog televisions and recording devices; converts digital TV broadcast signals to analog signals; TV tuner; parental controls"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "6986112",
+        "_score": 259.61383,
+        "_source": {
+          "name": [
+            "Magnavox - 15\" HD-Ready LCD TV w/HD Component Video Inputs"
+          ],
+          "shortDescription": [
+            "Picture-in-picture; Smart Picture; Smart Sound; table stand converts for wall mounting"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "7964937",
+        "_score": 256.4389,
+        "_source": {
+          "name": [
+            "Studio RTA - TV Stand for Tube TVs Up to 27\""
+          ],
+          "shortDescription": [
+            "Steel and particleboard; 2 shelves; mesh rear panel; floor levelers"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "8205532",
+        "_score": 143.53835,
+        "_source": {
+          "name": [
+            "Dynex\u00ae - 20\" 480i Standard-Definition Digital TV/DVD Combo"
+          ],
+          "shortDescription": [
+            "Front A/V input; 4:3 aspect ratio; silver cabinet; built-in DVD player"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "3622326",
+        "_score": 136.84175,
+        "_source": {
+          "name": [
+            "NETGEAR - NeoTV Wireless Media Player"
+          ],
+          "shortDescription": [
+            "For streaming movies, TV shows, music and more to your TV; Wireless-N standard; YouTube Leanback"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "3558057",
+        "_score": 135.52783,
+        "_source": {
+          "name": [
+            "Western Digital - WD TV Live Media Player"
+          ],
+          "shortDescription": [
+            "Allows you to enjoy home digital media or Internet sites on your HDTV; supports 1080p signals; Ethernet port; USB 2.0 interface; Wi-Fi"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "9747077",
+        "_score": 90.12221,
+        "_source": {
+          "name": [
+            "Antennas Direct - ClearStream Micron Indoor Long-Range Digital TV Antenna"
+          ],
+          "shortDescription": [
+            "Receives DTV signals with a range of up to 30 miles; compact design; table- or wall-mountable design; 4.5 dBi peak gain"
+          ]
+        }
+      },
+      {
+        "_index": "bbuy_products",
+        "_id": "7708359",
+        "_score": 73.10658,
+        "_source": {
+          "name": [
+            "Pinnacle Design - TV Stand for Large Flat-Panel and Projection TVs"
+          ],
+          "shortDescription": [
+            "Adjustable design accommodates flat-panel TVs 40\" - 61\" and projection TVs up to 61\" (150 lbs. max); holds up to 4 A/V components"
+          ]
+        }
+      }
+    ]
+  }
+}
